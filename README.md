@@ -1,23 +1,25 @@
 # 🤖 Multi-Agent AI Content Studio
 
-AI-powered content generation using **CrewAI + Hugging Face + Qwen + Streamlit**.
+> AI-powered content generation using **CrewAI + Hugging Face + Qwen + Streamlit**
 
-## 🚀 Workflow
+## 🚀 Overview
+
+A multi-agent AI application that converts a topic into a refined article using three specialized agents:
 
 ```text
 User Topic
     ↓
-🧠 Planner Agent
+🧠 Planner
     ↓
-✍️ Writer Agent
+✍️ Writer
     ↓
-📝 Editor Agent
+📝 Editor
     ↓
 ✨ Final Article
 🧠 Agents
-Agent	Responsibility
-🧠 Planner	Creates the content plan, structure and keywords
-✍️ Writer	Generates the article from the plan
+Agent	Role
+🧠 Planner	Creates content plan, structure and keywords
+✍️ Writer	Generates the article
 📝 Editor	Reviews and refines the article
 🛠️ Tech Stack
 Python 3.11
@@ -37,9 +39,9 @@ pip install -r requirements.txt
 
 Set your Hugging Face token:
 
-export HF_TOKEN="your_huggingface_token"
+export HF_TOKEN="your_token"
 
-Run the application:
+Run:
 
 python -m streamlit run project1.py
 📂 Project Structure
@@ -50,42 +52,38 @@ crewai-project/
 └── assets/
 🎯 Example
 
-Input:
+Input
 
 Artificial Intelligence
 
-Process:
+Output
 
-Artificial Intelligence
-        ↓
-      Planner
-        ↓
-   Content Plan
-        ↓
-      Writer
-        ↓
-    Draft Article
-        ↓
-      Editor
-        ↓
-   Final Article
-✨ Features
-🤖 Multi-agent AI workflow
-🔄 Sequential agent execution
-🧠 Specialized agent roles
-🤗 Hugging Face LLM integration
-🎨 Streamlit web interface
-📄 Markdown article generation
-📚 Key Concepts
-Multi-Agent Systems
-CrewAI
-Agent & Task Design
-Sequential Workflows
-LLM Integration
-Prompt Engineering
-Streamlit
+A structured and edited Markdown article generated through the Planner → Writer → Editor workflow.
+
+🔄 Architecture
+             Streamlit
+                 │
+                 ▼
+             CrewAI
+                 │
+        ┌────────┼────────┐
+        ▼        ▼        ▼
+     Planner → Writer → Editor
+                 │
+                 ▼
+           Final Article
+📚 Learning
+
+This project demonstrates:
+
+Multi-Agent AI
+CrewAI orchestration
+Agent & Task design
+Sequential workflows
+Hugging Face LLM integration
+Streamlit AI applications
 👨‍💻 Author
 
 Mahesh M S K
 
-Computer Science Student |
+Computer Science Student | AI & DevOps Enthusiast
