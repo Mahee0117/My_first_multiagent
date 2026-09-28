@@ -87,3 +87,6 @@ Streamlit AI applications
 Mahesh M S K
 
 Computer Science Student | AI & DevOps Enthusiast
+
+<img width="1470" height="956" alt="Agents Started" src="https://github.com/user-attachments/assets/8e0c2376-a968-4fdf-b853-8d4c495acca7" />
+
